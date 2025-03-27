@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidetaka Miyazaki - Creative Vision</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#home" class="nav-link">Главная</a></li>
+            <li><a href="#about" class="nav-link">Биография</a></li>
+            <li><a href="#works" class="nav-link">Проекты</a></li>
+            <li><a href="#contact" class="nav-link">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hidetaka Miyazaki</h1>
+            <p>Архитектор миров</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-content">
+            <h2>Творческая философия</h2>
+            <p>Президент FromSoftware, создатель серий <strong><em>Dark Souls, Bloodborne и Elden Ring</em></strong>. Его стиль характеризуется лучшим в сфере дизайна игр, персонажей, локаций, музыки и т.д</p>
+        </div>
+    </section>
+
+    <section id="works" class="works">
+        <div class="section-content">
+            <h2>Игровые вселенные</h2>
+            
+            <!-- Dark Souls Section -->
+            <div class="game-logo-section">
+                <img src="https://p325k7wa.twic.pics/high/dark-souls/dark-souls-trilogy/00-page-setup/dst_logo.png?twic=v1/resize=300/step=10/quality=80" 
+                     class="game-logo" 
+                     alt="Dark Souls Trilogy">
+            </div>
+            <div class="games-carousel">
+                <div class="carousel-slide active">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570940/ss_3a71463e4ccaf28c5c27f6cf8d32a3a125f45404.1920x1080.jpg?t=1726158603" 
+                         alt="Dark Souls">
+                    <div class="game-info">
+                        <h3>Dark Souls</h3>
+                        <p>Action RPG</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236430/ss_9da48e604ad0d59add1a2fdec0140c1e052247cf.1920x1080.jpg?t=1726158600" 
+                         alt="Dark Souls 2">
+                    <div class="game-info">
+                        <h3>Dark Souls 2</h3>
+                        <p>Gothic Horror RPG</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/374320/ss_1318a04ef11d87f38aebe6d47a96124f8f888ca8.1920x1080.jpg?t=1733509027" 
+                         alt="Dark Souls 3">
+                    <div class="game-info">
+                        <h3>Dark Souls 3</h3>
+                        <p>Action Adventure</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elden Ring Section -->
+            <div class="game-logo-section">
+                <img src="https://p325k7wa.twic.pics/high/elden-ring/elden-ring/00-page-setup/eldenring_new.png?twic=v1/resize=800/step=10/quality=80" 
+                     class="game-logo" 
+                     alt="Elden Ring">
+            </div>
+            <div class="games-carousel">
+                <div class="carousel-slide active">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/ss_943bf6fe62352757d9070c1d33e50b92fe8539f1.1920x1080.jpg?t=1739922037" 
+                         alt="Elden Ring">
+                    <div class="game-info">
+                        <h3>Elden Ring</h3>
+                        <p>Open world and goat game of the year</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://www.blackflix.com/wp-content/uploads/ELDEN-RING-Nightreign-KEYART_Logo1.png" 
+                         alt="Elden Ring Nightreign">
+                    <div class="game-info">
+                        <h3>Elden Ring Nightrein</h3>
+                        <p>Battle royal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="works">
+    <div class="container">
+        <h2>Работы</h2>
+        <div class="gallery">
+            <div class="card">
+                <a href="#modal1">
+                    <img src="images/darksouls.jfif" alt="Работа 1">
+                </a>
+            </div>
+            <div class="card">
+                <a href="#modal2">
+                    <img src="images/R.jfif" alt="Работа 2">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="contact">
+        <div class="section-content">
+            <h2>Сотрудничество</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Сообщение..." required></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
+
+    <div class="socials">
+        <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+        <a href="#"><i class="fa-solid fa-globe social-icon"></i></a>
+        <a href="#"><i class="fa-brands fa-steam social-icon"></i></a>
+    </div>
+
+    <div class="modal" id="modal1">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <img src="images/darksouls.jfif" alt="Работа 1">
+    </div>
+</div>
+
+<div class="modal" id="modal2">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <img src="images/R.jfif" alt="Работа 2">
+    </div>
+</div>
+
+    <script>
+        // Управление каруселями
+        document.querySelectorAll('.games-carousel').forEach(carousel => {
+            let currentSlide = 0;
+            const slides = carousel.querySelectorAll('.carousel-slide');
+            
+            function showSlide(n) {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+            
+            setInterval(() => showSlide(currentSlide + 1), 5000);
+        });
+
+        // Кнопка "Наверх"
+        window.addEventListener('scroll', () => {
+            const toTop = document.querySelector('.to-top');
+            toTop.style.display = window.pageYOffset > 100 ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>
